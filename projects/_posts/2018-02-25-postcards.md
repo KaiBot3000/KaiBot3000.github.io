@@ -2,7 +2,8 @@
 layout: project
 date: 2018-2-25
 title: Postcards
-description: Fodder for my personal mailing list
+thumbnail: 
+description: Hand-drawn postcards for my personal mailing list, hopefully published monthly but at least quarterly. Topics are usually topical, and feature bees and plants on a regular basis.
 tags: writing illustration
 permalink: /postcards
 
