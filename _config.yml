@@ -1,1 +1,6 @@
 baseurl:
+collections:
+  notes:
+    output: true
+  projects:
+    output: true

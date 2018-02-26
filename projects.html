@@ -9,18 +9,18 @@ description: Projects
     I'm constantly learning new things, and this is just a sampling of what I've been up to in the last decade. My favorite media are weathered wood, metal, and ceramics, but I've worked in everything from leather and fabric to oil paints and resin. I write code both professionally and as a hobby, on subjects ranging from a production geocoding/search engine to command line dinosaurs.
   </div>
 
-  {% for post in site.categories.projects %}
+  {% for project in site.projects %}
       <div class='col col--4 my24'>
-        <a href="{{ post.url }}">
+        <a href='{{ post.url }}'>
           <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
-            {% if post.thumbnail %}
+            {% if project.thumbnail %}
               <img src='{{ post.thumbnail }}'>
             {% endif %}
-            <div class='txt-h3'>{{ post.title }}</div>
-            <div class=''>{{ post.description }}</div>
+            <div class='txt-h3'>{{ project.title }}</div>
+            <div class=''>{{ project.description }}</div>
             <div class='txt-em mt24'>
               Tags:
-              {% for tag in post.tags %}
+              {% for tag in project.tags %}
                 <span class='round-full px12 py6 mx6  bg-gray-faint'>
                   {{ tag }}
                 </span>
