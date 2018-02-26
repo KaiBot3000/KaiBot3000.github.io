@@ -1,6 +1,6 @@
 ---
 layout: project
-date: 2018-2-25
+timeframe: Ongoing
 title: Postcards
 thumbnail: 
 description: Hand-drawn postcards for my personal mailing list, hopefully published monthly but at least quarterly. Topics are usually topical, and feature bees and plants on a regular basis.

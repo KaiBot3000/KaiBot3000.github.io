@@ -17,6 +17,10 @@ description: Projects
               <img src='{{ post.thumbnail }}'>
             {% endif %}
             <div class='txt-h3'>{{ project.title }}</div>
+            <div class='color-green'>
+              <svg class='icon inline'><use xlink:href='#icon-clock'/></svg>
+              {{ project.timeframe }}
+            </div>
             <div class=''>{{ project.description }}</div>
             <div class='txt-em mt24'>
               Tags:
