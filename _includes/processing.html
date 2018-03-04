@@ -1,0 +1,11 @@
+<script src='processing.min.js'></script> 
+<script type='text/javascript'>
+  function updateMultiplier(multiplier) {
+    sketch = Processing.getInstanceById('sketchCanvas');
+    sketch.updateMultiplier(multiplier);
+  }
+</script>
+
+<canvas id='sketchCanvas' data-processing-sources='assets/multiplier.pde'></canvas>
+<!-- slider for points -->
+<div class='range range--black w300'><input type='range' min='2' max='10' onInput='updateMultiplier(this.value)'></div>

@@ -12,7 +12,7 @@ description: Projects
   {% assign projects = site.projects | where: 'hidden', 'false' %}
   {% for project in projects %}
       <div class='col col--4 my24'>
-        <a href='{{ post.url }}'>
+        <a href='{{ project.url }}'>
           <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
             {% if project.thumbnail %}
               <img src='{{ post.thumbnail }}'>
