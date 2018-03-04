@@ -2,5 +2,7 @@ baseurl:
 collections:
   notes:
     output: true
+    permalink: /:collection/:title.html
   projects:
     output: true
+    permalink: /:collection/:title.html
