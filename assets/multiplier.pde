@@ -1,53 +1,67 @@
-int BASE_COLOR = 240;
-ArrayList<Ripple> ripples = new ArrayList<Ripple>();
+ArrayList<Nail> nails = new ArrayList<Nail>();
 
+int radius = 350;
+int numPoints = 200;
+int pointRadius = 2;
+float multiplier = 2;
 
 void setup() {
-    size(400, 400);
-    background(BASE_COLOR);
+    size(800, 800);
+    background(240);
+    fill(0);
+    // displayCircle(radius, numPoints);
+    // displayMultiples();
 }
 
 void draw() {
-    background(BASE_COLOR);
-    for (int i=0; i<ripples.size(); i++) {
-        Ripple ripple = ripples.get(i);
-        if (ripple.hide) {
-            ripples.remove(i);
-        } else {
-            ripple.update();
-            ripple.display();
-        }
+    background();
+    displayCircle(radius, numPoints);
+    displayMultiples();
+}
+
+void displayCircle(radius, points) {
+    float angle = TWO_PI/(float)points;
+    for (int i=0; i<points; i++) {
+        nails.add(new Nail(radius*sin(angle*i) + (width/2), radius*cos(angle*i) + (height/2)));
+    }
+    for (Nail nail : nails) {
+        nail.display();
     }
 }
 
-void mousePressed() {
-    ripples.add(new Ripple(mouseX, mouseY));
+void displayMultiples() {
+    for (int i=0; i<nails.size(); i++) {
+        Nail start = nails.get(i);
+        Nail end = nails.get((multiplier * i) % numPoints);
+        // possibly lines getting drawn twice because of overlap- there are actually two lines with that math
+        // could add to dict / dedupe then draw
+        // but why would that only be the case when ran in draw() but not setup()?
+        line(start.x, start.y, end.x, end.y);
+    }
 }
 
-class Ripple {
+class Nail {
     float x, y;
     int radius, color;
-    boolean hide = false;
 
-    // Constructor
-    Ripple(float x, float y) {
+    Nail(float x, float y) {
         this.x = x;
         this.y = y;
-        radius = 1;
-        color = BASE_COLOR-100;
-    }
-
-    void update() {
-        if (color >= BASE_COLOR) {
-            hide = true;
-        }
-        radius += 3;
-        color += 1;
+        radius = 3;
+        color = 0;
     }
 
     void display() {
-        noFill();
         stroke(color);
+        fill(color);
         ellipse(x, y, radius, radius);
     }
 }
+
+/*
+ * Slider
+ */
+
+void updateMultiplier(float sliderMultiplier) {
+    multiplier = sliderMultiplier;
+} 
