@@ -1,7 +1,7 @@
 ---
 layout: project
 timeframe: February 2018
-title: Processing Multiplication Tables
+title: Multiplication Tables with Processing
 thumbnail: 
 description: What does math have to do with visualizations? I experimented with visual multiplication tables using Processing, a language similar to Java and used for browser rendering and writing code for LEDs.
 customScripts:
@@ -24,15 +24,14 @@ function updatePoints(points) {
   sketch.updatePoints(points);
 }
 </script>
-<div class='grid grid--gut12 my6'>
-  <div class='col col--12 my24 txt-h3'>Controls</div>
-  <div class='col col--12'>Change Multiplier:
+<div class='grid grid--gut12 my36'>
+  <div class='col col--12 txt-bold'>Change Multiplier:
     <div class='range range--black w300'>
       <input type='range' min='2' max='100' onInput='updateMultiplier(this.value)'>
     </div>
   </div>
   <br>
-  <div class='col col--12'>Change Points:
+  <div class='col col--12 txt-bold'>Change Points:
     <div class='range range--black w300'>
       <input type='range' min='2' max='300' onInput='updatePoints(this.value)'>
     </div>
