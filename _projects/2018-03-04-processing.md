@@ -10,7 +10,7 @@ customScripts:
   - processing.min.js
 ---
 
-Processing is a visual arts language based on Java. Here I've combined it with 'processing.js' to produce a browser-based exploration of multiplication tables. The concept is explained in [this youtube video](https://www.youtube.com/watch?v=qhbuKbxJsk8&t=149s) called "Times Tables, Mandelbrot and the Heart of Mathematics", but essentially we're using multiplication to draw lines between points on a circle. I made this demo in Processing to let users control which number we use as our base multiplier, and the number of points along the circle. Some neat patterns emerge!
+<span class='txt-code'>[Processing](https://processing.org/)</span> is a visual arts language based on Java. Here I've combined it with <span class='txt-code'>[processing.js](http://processingjs.org/)</span> to produce a browser-based exploration of multiplication tables. The concept is explained in <span class='txt-underline'>[this "Times Tables, Mandelbrot and the Heart of Mathematics" video](https://www.youtube.com/watch?v=qhbuKbxJsk8&t=149s)</span>, but essentially we're using multiplication to draw lines between points on a circle. I made this demo in control which number we use as our base multiplier, and the number of points along the circle. Some neat patterns emerge!
 
 <!-- processing demo -->
 <script type='text/javascript'>
