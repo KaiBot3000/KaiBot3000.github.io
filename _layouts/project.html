@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<hr class='txt-hr'>
+<div id='project'>
+  <div class='grid grid--gut12 mx24 my24'>
+    <div class='col col--10 my24 mx-auto'>
+      <div class='txt-h2'>
+        {{ page.title }}
+      </div>
+      <div class='color-green'>
+        <svg class='icon inline'><use xlink:href='#icon-clock'/></svg>
+        {{ page.timeframe }}
+      </div>
+      <div class='txt-h4 my36'>
+        {{ content }}
+      </div>
+      <div id='pictures' class='grid grid--gut12'>
+        {% if page.pictures %}
+          {% for pic in page.pictures %}
+            <div class='col col--4 relative px6 py6'>
+              <div class='txt-em'>
+                <img src=' {{ pic.src }}' alt='{{ pic.caption }}' style='width: 100%;'>
+                {{ pic.caption }}
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

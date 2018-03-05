@@ -1,0 +1,38 @@
+---
+layout: default
+description: Notes
+---
+
+<hr class='txt-hr'>
+<div class='grid grid--gut12 mx24 my24'>
+  {% assign notes = site.notes | where: 'hidden', 'false' %}
+  {% for note in notes %}
+      <div class='col col--12 my24'>
+        <a href='{{ note.url }}'>
+          <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
+            <div class='col col--4 my24'>
+              {% if note.thumbnail %}
+                <img src='{{ post.thumbnail }}'>
+              {% endif %}
+          </div>
+          <div class='col col--8 my24 mx24'>
+            <div class='txt-h3'>{{ note.title }}</div>
+            <div class='color-green'>
+              <svg class='icon inline'><use xlink:href='#icon-clock'/></svg>
+              {{ note.date | date: '%B %d, %Y' }}
+            </div>
+            <div class='my12 mb24 txt-h4'>{{ note.description }}</div>
+            <div class='txt-em'>
+              Tags:
+              {% for tag in note.tags %}
+                <span class='round-full px12 py6 mx6 bg-gray-faint'>
+                  {{ tag }}
+                </span>
+              {% endfor %}
+            </div>
+          </div>
+        </a>
+      </div>
+  {% endfor %}
+
+</div>
