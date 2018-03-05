@@ -63,6 +63,5 @@ void updateMultiplier(float sliderMultiplier) {
 }
 
 void updatePoints(int sliderPoints) {
-    println(sliderPoints);
     numPoints = sliderPoints;
 }
