@@ -1,11 +1,12 @@
 ---
+hidden: true
 layout: project
-timeframe: Ongoing
-title: Postcards
 thumbnail: 
+title: Postcards
+timeframe: Ongoing
 description: Hand-drawn postcards for my personal mailing list, hopefully published monthly but at least quarterly. Topics are usually topical, and feature bees and plants on a regular basis.
 tags: writing illustration
-hidden: false
+pictures:
 ---
 
 I like to make postcards!

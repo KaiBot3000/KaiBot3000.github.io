@@ -1,13 +1,13 @@
 ---
+hidden: false
 layout: project
-timeframe: February 2018
+thumbnail: https://user-images.githubusercontent.com/11284580/36994519-5fe3d896-207f-11e8-8bbc-5fe62c317eda.png
 title: Multiplication Tables with Processing
-thumbnail: 
+timeframe: February 2018
 description: What does math have to do with visualizations? I experimented with visual multiplication tables using Processing, a language similar to Java and used for browser rendering and writing code for LEDs.
+tags: art code processing math recurse
 customScripts:
   - processing.min.js
-tags: art code processing math recurse
-hidden: false
 ---
 
 Processing is a visual arts language based on Java. Here I've combined it with 'processing.js' to produce a browser-based exploration of multiplication tables. The concept is explained in [this youtube video](https://www.youtube.com/watch?v=qhbuKbxJsk8&t=149s) called "Times Tables, Mandelbrot and the Heart of Mathematics", but essentially we're using multiplication to draw lines between points on a circle. I made this demo in Processing to let users control which number we use as our base multiplier, and the number of points along the circle. Some neat patterns emerge!

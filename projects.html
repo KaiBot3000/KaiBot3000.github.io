@@ -15,7 +15,7 @@ description: Projects
         <a href='{{ project.url }}'>
           <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
             {% if project.thumbnail %}
-              <img src='{{ post.thumbnail }}'>
+              <img src='{{ project.thumbnail }}' class='round-bold' style='width: 100%;'>
             {% endif %}
             <div class='txt-h3'>{{ project.title }}</div>
             <div class='color-green'>

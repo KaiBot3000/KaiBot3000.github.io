@@ -1,11 +1,11 @@
 ---
+hidden: true
 layout: project
-timeframe: Ongoing
+thumbnail:
 title: Adventures
-thumbnail: 
+timeframe: Ongoing
 description: Stash of various adventures from riding freight trains to visiting India.
 tags: adventure travel trains exploration
-hidden: false
 ---
 
 adventures!
