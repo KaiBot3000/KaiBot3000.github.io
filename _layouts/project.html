@@ -21,7 +21,7 @@ layout: default
           {% for pic in page.pictures %}
             <div class='col col--4 relative px6 py6'>
               <div class='txt-em'>
-                <img src=' {{ pic.src }}' style='width: 100%;'>
+                <img src=' {{ pic.src }}' alt='{{ pic.caption }}' style='width: 100%;'>
                 {{ pic.caption }}
               </div>
             </div>
