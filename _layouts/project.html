@@ -16,6 +16,18 @@ layout: default
       <div class='txt-h4 my36'>
         {{ content }}
       </div>
+      <div id='pictures' class='grid grid--gut12'>
+        {% if page.pictures %}
+          {% for pic in page.pictures %}
+            <div class='col col--4 relative px6 py6'>
+              <div class='txt-em'>
+                <img src=' {{ pic.src }}' style='width: 100%;'>
+                {{ pic.caption }}
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
