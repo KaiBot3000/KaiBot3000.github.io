@@ -1,0 +1,15 @@
+{% if page.related %}
+  <hr class='txt-hr my36'>
+  <div id='related'>
+    <div class='txt-h4 mx-auto color-green''>
+      Related Notes and Projects:
+    </div>
+    {% for post in page.related %}
+      <a href='{{ site.baseurl }}{{ post }}.html'>
+        <span class='round-full px6 pb3 mx3 bg-gray-faint'>
+          {{ post }}
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}
