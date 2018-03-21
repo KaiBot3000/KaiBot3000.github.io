@@ -5,7 +5,7 @@ thumbnail: https://user-images.githubusercontent.com/11284580/37726402-a7c5f426-
 title: Octopuses
 timeframe: Ongoing
 description: How to make friends (if your friends have eight legs)
-tags: art
+tags: art sculpture
 pictures:
   - ozzieandollie:
     src: https://user-images.githubusercontent.com/11284580/37726402-a7c5f426-2d0b-11e8-9d3f-777281498507.png
