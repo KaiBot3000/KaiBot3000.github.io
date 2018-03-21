@@ -8,4 +8,4 @@ description: Stash of various adventures from riding freight trains to visiting 
 tags: adventure travel trains exploration
 ---
 
-adventures!
+The world is vast and full of interesting things.
