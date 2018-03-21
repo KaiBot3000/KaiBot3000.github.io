@@ -13,6 +13,9 @@ pictures:
   - fall:
     src: https://user-images.githubusercontent.com/11284580/37727959-6aea5750-2d0f-11e8-8fdc-9e9548ef77ab.png
     caption: A break from my normal pen and ink.
+  - spring:
+    src: https://user-images.githubusercontent.com/11284580/37732021-22273c30-2d1a-11e8-9bce-89f0df8a8f48.jpg
+    caption: Spring 2017
 related: 
   - illustration
 ---
