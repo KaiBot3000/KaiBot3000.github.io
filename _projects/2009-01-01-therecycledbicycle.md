@@ -1,7 +1,7 @@
 ---
 hidden: false
 layout: project
-thumbnail: url
+thumbnail: https://user-images.githubusercontent.com/11284580/37732858-abe831b6-2d1c-11e8-83dd-2bc2012f271b.jpg
 title: The Recycled Bicycle
 timeframe: 2006 - 2015
 description: Turning discarded bicycle parts into jewelry and toys.
