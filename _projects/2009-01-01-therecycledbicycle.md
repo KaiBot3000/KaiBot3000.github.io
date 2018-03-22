@@ -16,19 +16,19 @@ pictures:
     src: https://user-images.githubusercontent.com/11284580/37732860-abfbcac8-2d1c-11e8-8001-6d04ec5fb187.jpg
   - triplebangle:
     src: https://user-images.githubusercontent.com/11284580/37732861-ac0d7584-2d1c-11e8-9f42-cd8b100d3f1e.jpg
-  - bubblewrap
+  - bubblewrap:
     src: https://user-images.githubusercontent.com/11284580/37732862-ac193c5c-2d1c-11e8-9650-817ed2e79fd3.jpg
-  - featherlink
+  - featherlink:
     src: https://user-images.githubusercontent.com/11284580/37732863-ac253732-2d1c-11e8-92cd-c5b1e629e739.jpg
-  - banglesquiggle
+  - banglesquiggle:
     src: https://user-images.githubusercontent.com/11284580/37732864-ac31ae0e-2d1c-11e8-9115-49c9a3664d89.jpg
-  - rubberbands
+  - rubberbands:
     src: https://user-images.githubusercontent.com/11284580/37732865-ac42f420-2d1c-11e8-89c3-2677fb80f715.jpg
-  - woven
+  - woven:
     src: https://user-images.githubusercontent.com/11284580/37732866-ac553040-2d1c-11e8-80cf-c03ab860fa27.jpg
-  - linkwrap
+  - linkwrap:
     src: https://user-images.githubusercontent.com/11284580/37732867-ac64474c-2d1c-11e8-89be-82a1278e37f4.jpg
-  - pinflower
+  - pinflower:
     src: https://user-images.githubusercontent.com/11284580/37732868-ac6fa3ee-2d1c-11e8-9ddb-d8b74241190d.jpg
 ---
 
