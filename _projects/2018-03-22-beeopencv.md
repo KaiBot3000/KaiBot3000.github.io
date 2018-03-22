@@ -5,11 +5,18 @@ thumbnail: https://user-images.githubusercontent.com/11284580/37794283-758b3124-
 title: Bee OpenCV
 timeframe: February 2018
 description: Playing with computer vision using OpenCV and my honey bees.
-tags: code bees
+tags: code bees recurse
 related:
   - bees
 ---
 
+<span class='txt-code'> [Check out the code for this project on Github](https://github.com/KaiBot3000/bee-opencv)!</span>
+
+<br>
+
+<span class='txt-h3'> Idea </span>
+
+<br>
 
 This project uses OpenCV, a C++ computer vision library with bindings in a number of languages. I chose to use opencv-python, which [can be installed using `pip`](https://pypi.python.org/pypi/opencv-python) but tbh is kind of a process.
 
