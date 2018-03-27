@@ -1,12 +1,17 @@
 ---
 layout: default
 description: Projects
+customScripts:
+ - tags.js
 ---
 
 <hr class='txt-hr'>
 <div class='grid grid--gut12 mx24 my24'>
   <div class='col col--12 txt-h4 txt-em my24 px60 mx-auto'>
     I'm constantly learning new things, and this is just a sampling of what I've been up to in the last decade. My favorite media are weathered wood, metal, and ceramics, but I've worked in everything from leather and fabric to oil paints and resin. I write code both professionally and as a hobby, on subjects ranging from a production geocoding/search engine to command line dinosaurs.
+  </div>
+
+  <div id='tagCloudDiv' class='col col--12 txt-h4 my24 px60 mx-auto'>
   </div>
 
   {% assign projects = site.projects | where: 'hidden', 'false' %}
@@ -26,7 +31,7 @@ description: Projects
             <div class='txt-em mt24'>
               Tags:
               {% for tag in project.tags %}
-                <span class='round-full px6 pb3 mx3 bg-gray-faint'>
+                <span class='tag round-full px6 pb3 mx3 mt24 bg-gray-faint'>
                   {{ tag }}
                 </span>
               {% endfor %}

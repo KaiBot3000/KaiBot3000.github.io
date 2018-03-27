@@ -1,6 +1,8 @@
 ---
 layout: default
 description: Notes
+customScripts:
+ - tags.js
 ---
 
 <hr class='txt-hr'>
@@ -25,7 +27,7 @@ description: Notes
             <div class='txt-em'>
               Tags:
               {% for tag in note.tags %}
-                <span class='round-full px12 py6 mx6 bg-gray-faint'>
+                <span class='tag round-full px12 py6 mx6 mt24 bg-gray-faint'>
                   {{ tag }}
                 </span>
               {% endfor %}
