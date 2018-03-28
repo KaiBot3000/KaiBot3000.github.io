@@ -28,7 +28,9 @@ function tagCloud() {
     for (tag in tags) {
         let tagSpan = document.createElement('span');
         tagSpan.className = 'round-full inline-block px6 pb3 mx3 my6 bg-gray-faint';
-        tagSpan.innerHTML = `${tag}  (${tags[tag].count})`;
+        // changing th einnerhtml directly makes it harder to match tags later
+        // tagSpan.innerHTML = `${tag}  (${tags[tag].count})`;
+        tagSpan.innerHTML = tag;
         tagSpan.addEventListener('click', toggleTag);
         tagCloudDiv.appendChild(tagSpan);
     };
