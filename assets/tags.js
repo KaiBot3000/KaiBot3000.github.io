@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', tagCloud)
 
-let tagFilter = ['all'];
-
-// start out with all
-// if you click on one, unclick all, show only that one
-// if you click on all, unclick all others and have all
+let tagFilter = [];
 
 function tagCloud() {
     // get list of tags from posts on page
@@ -20,36 +16,16 @@ function tagCloud() {
         }
     });
 
-    // add 'all' tag
-    // let allSpan = document.createElement('span');
-    // allSpan.className = 'round-full inline-block px6 pb3 mx3 my6 bg-gray-light bg-gray-light-on-hover';
-    // allSpan.innerHTML = 'all';
-    // allSpan.addEventListener('click', toggleAll);
-    // tagCloudDiv.appendChild(allSpan);
-
     // add tag cloud html to tagcloud div
     for (tag in tags) {
         let tagSpan = document.createElement('span');
-        tagSpan.className = 'round-full inline-block px6 pb3 mx3 my6 bg-gray-faint bg-gray-light-on-hover';
+        tagSpan.className = 'round-full inline-block px6 pb3 mx3 my6 bg-gray-faint';
         tagSpan.innerHTML = tag;
         tagSpan.addEventListener('click', toggleTag);
         tagCloudDiv.appendChild(tagSpan);
     };
 
-    // filter posts by filter list
-
 }
-
-// function toggleAll(event) {
-//     event.target.classList.toggle('bg-gray-faint');
-//     event.target.classList.toggle('bg-gray-light');
-//     if (tagFilter.indexOf('all') > -1) {
-//         tagFilter = [];
-//     } else {
-//         tagFilter = ['all'];
-//     }
-//     console.log(tagFilter);
-// }
 
 function toggleTag(event) {
     event.target.classList.toggle('bg-gray-faint');
@@ -60,14 +36,22 @@ function toggleTag(event) {
     } else {
         tagFilter.push(event.target.innerHTML);
     }
-    console.log(tagFilter);
 
-    // call updatePosts
+    updatePosts();
 }
 
 function updatePosts() {
-    // updates posts shown based on most recent tagFilter
-
-    // if the list is empty, show everything
-    // if there's something in the list, show only posts with those tags.
+    Array.from(document.getElementsByClassName('post')).forEach(function(post) {
+        if (tagFilter.length === 0) {
+            post.style.display = null;
+        } else {
+            post.style.display = 'none';
+            Array.from(post.getElementsByClassName('tag')).forEach(function(tag) {
+                let tagText = tag.innerText.trim();
+                if (tagFilter.indexOf(tagText) > -1) {
+                    post.style.display = null;
+                }
+            });
+        }
+    });
 }
