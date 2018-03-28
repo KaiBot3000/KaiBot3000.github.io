@@ -1,6 +1,8 @@
 ---
 layout: default
 description: Projects
+customScripts:
+ - tags.js
 ---
 
 <hr class='txt-hr'>
@@ -9,9 +11,11 @@ description: Projects
     I'm constantly learning new things, and this is just a sampling of what I've been up to in the last decade. My favorite media are weathered wood, metal, and ceramics, but I've worked in everything from leather and fabric to oil paints and resin. I write code both professionally and as a hobby, on subjects ranging from a production geocoding/search engine to command line dinosaurs.
   </div>
 
+  {% include postFilter.html %}
+
   {% assign projects = site.projects | where: 'hidden', 'false' %}
   {% for project in projects %}
-      <div class='col col--12 col--4-mm my24'>
+      <div class='post col col--12 col--4-mm my24' style=''>
         <a href='{{ project.url }}'>
           <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
             {% if project.thumbnail %}
@@ -26,7 +30,7 @@ description: Projects
             <div class='txt-em mt24'>
               Tags:
               {% for tag in project.tags %}
-                <span class='round-full px6 pb3 mx3 bg-gray-faint'>
+                <span class='tag round-full px6 pb3 mx3 mt24 bg-gray-faint'>
                   {{ tag }}
                 </span>
               {% endfor %}
