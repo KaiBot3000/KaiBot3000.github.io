@@ -5,7 +5,7 @@ thumbnail: https://user-images.githubusercontent.com/11284580/37726443-c40a3926-
 title: Illustration
 timeframe: Ongoing
 description: What do Freeskool calendars, event fliers, and banners have in common? I drew them!
-tags: art illustration freeskool
+tags: art illustration
 pictures:
   - feelstrong:
     src: https://user-images.githubusercontent.com/11284580/37726443-c40a3926-2d0b-11e8-9938-16eb77aa5443.png

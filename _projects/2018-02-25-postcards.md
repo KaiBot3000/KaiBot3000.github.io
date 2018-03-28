@@ -5,7 +5,7 @@ thumbnail: https://user-images.githubusercontent.com/11284580/37727960-6affe9a8-
 title: Postcards
 timeframe: Ongoing
 description: Hand-drawn postcards for my personal mailing list, hopefully published monthly but at least quarterly. Topics are usually topical, and feature bees and plants on a regular basis.
-tags: writing illustration art
+tags: illustration art
 pictures:
   - may:
     src: https://user-images.githubusercontent.com/11284580/37727960-6affe9a8-2d0f-11e8-85ad-3afa6c929f54.png

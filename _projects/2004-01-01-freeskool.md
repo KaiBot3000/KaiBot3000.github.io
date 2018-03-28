@@ -5,7 +5,7 @@ thumbnail:
 title: Freeskool Santa Cruz
 timeframe: 2004-2014?
 description: Freeskool Santa Cruz was a decentralized community education project that served as a model for freeskools around the world.
-tags: education programming art bikes
+tags: teaching code art
 pictures:
   - beeswax:
     src: [url]

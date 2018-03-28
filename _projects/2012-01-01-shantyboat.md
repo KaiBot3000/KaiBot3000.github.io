@@ -5,7 +5,7 @@ thumbnail: url
 title: Shantyboat
 timeframe: 2013-2014
 description: In which I build a boat and float it down the Mississippi.
-tags: adventure art construction
+tags: adventure art
 pictures:
 customScripts:
 ---
