@@ -11,9 +11,7 @@ customScripts:
     I'm constantly learning new things, and this is just a sampling of what I've been up to in the last decade. My favorite media are weathered wood, metal, and ceramics, but I've worked in everything from leather and fabric to oil paints and resin. I write code both professionally and as a hobby, on subjects ranging from a production geocoding/search engine to command line dinosaurs.
   </div>
 
-  <div id='tagCloudDiv' class='col col--12 txt-h4 my24 px60 mx-auto'>
-    Click to filter:
-  </div>
+  {% include postFilter.html %}
 
   {% assign projects = site.projects | where: 'hidden', 'false' %}
   {% for project in projects %}

@@ -1,12 +1,19 @@
-document.addEventListener('DOMContentLoaded', tagCloud)
+/*
+ * Generates a tag cloud and handles filtering based on
+ * user interaction with tags
+ */
 
+document.addEventListener('DOMContentLoaded', tagCloud)
 let tagFilter = [];
 
+/*
+ * Generates a tag cloud from visible posts
+ */
 function tagCloud() {
-    // get list of tags from posts on page
     let tags = {};
     const tagCloudDiv = document.getElementById('tagCloudDiv');
 
+    // get tags from posts on page
     Array.from(document.getElementsByClassName('tag')).forEach(function(tag) {
         let tagText = tag.innerText.trim();
         if (tags[tagText]) {
@@ -17,6 +24,7 @@ function tagCloud() {
     });
 
     // add tag cloud html to tagcloud div
+    // TODO: show count for each tag
     for (tag in tags) {
         let tagSpan = document.createElement('span');
         tagSpan.className = 'round-full inline-block px6 pb3 mx3 my6 bg-gray-faint';
@@ -24,9 +32,12 @@ function tagCloud() {
         tagSpan.addEventListener('click', toggleTag);
         tagCloudDiv.appendChild(tagSpan);
     };
-
 }
 
+/*
+ * Handle interaction with tags
+ * Changes color based on status and calls update
+ */
 function toggleTag(event) {
     event.target.classList.toggle('bg-gray-faint');
     event.target.classList.toggle('bg-gray-light');
@@ -40,6 +51,9 @@ function toggleTag(event) {
     updatePosts();
 }
 
+/*
+ * Changes posts visibility based on their tags
+ */
 function updatePosts() {
     Array.from(document.getElementsByClassName('post')).forEach(function(post) {
         if (tagFilter.length === 0) {
