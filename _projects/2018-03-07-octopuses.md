@@ -19,7 +19,9 @@ pictures:
   - legs:
     src: https://user-images.githubusercontent.com/11284580/37731840-b3a3ccb0-2d19-11e8-834a-952e8f92aa83.jpg
     caption: Legs, an early octopus made before I realized what a pain stuffing tiny long legs can be! Here he's about to accompany me on a plane trip.
-
+  - U+1f419:
+    src: https://user-images.githubusercontent.com/11284580/38111766-ebd0f5e0-336d-11e8-98e7-04aafb23c34f.JPG
+    caption: U+1f419, based on the unofficial mascot of the Recurse Center.
 customScripts:
 ---
 
