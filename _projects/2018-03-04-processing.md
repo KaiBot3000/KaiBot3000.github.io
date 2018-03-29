@@ -4,7 +4,7 @@ layout: project
 thumbnail: https://user-images.githubusercontent.com/11284580/36994519-5fe3d896-207f-11e8-8bbc-5fe62c317eda.png
 title: Multiplication Tables with Processing
 timeframe: February 2018
-description: What does math have to do with visualizations? I experimented with visual multiplication tables using Processing, a language similar to Java and used for browser rendering and writing code for LEDs.
+description: What does math have to do with visualizations? I experimented with visual multiplication tables using Processing..
 tags: art code recurse
 customScripts:
   - processing.min.js

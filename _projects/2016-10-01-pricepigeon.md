@@ -11,6 +11,7 @@ related:
 ---
 
 ![](https://user-images.githubusercontent.com/11284580/37729325-1277d90e-2d13-11e8-8bc6-afcdc5cac242.jpg)
+<br>
 <span class='txt-em'>Pigeon illustration by [Joseph Wilkins](https://brightonillustrators.co.uk/portfolios/Joseph_Wilkins)</span>
 
 <br>
