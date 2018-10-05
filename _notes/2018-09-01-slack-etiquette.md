@@ -2,7 +2,7 @@
 layout: note
 date: 2018-9-1
 title: Slack Etiquette
-description: Some ground-rules and protips for folks getting to know Slack, which I wrote while working with a bug group of Slack n00bs.
+description: Some ground-rules and protips for folks getting to know Slack, which I wrote while working with a big group of Slack n00bs.
 tags: temple slack communication
 hidden: false
 
