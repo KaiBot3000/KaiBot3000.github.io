@@ -2,16 +2,13 @@
 layout: default
 description: Notes
 customScripts:
- - tags.js
 ---
 
 <hr class='txt-hr'>
 <div class='grid grid--gut12 mx24 my24'>
 
-  {% include postFilter.html %}
-
   {% assign notes = site.notes | where: 'hidden', 'false' %}
-  {% for note in notes %}
+  {% for note in notes reversed %}
       <div class='post col col--12 my24'>
         <a href='{{ note.url }}'>
           <div class='border px12 py12 round-bold border--darken10 shadow-darken25-on-hover'>
